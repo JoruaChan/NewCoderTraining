@@ -1,4 +1,4 @@
-package com.joruachan.newcoder;
+package cn.joruachan.newcoder;
 
 /**
  * 题目描述
@@ -10,27 +10,30 @@ package com.joruachan.newcoder;
  *
  * @author JoruaChan
  * @date 2021-04-19 下午11:50
+ * @grade 简单
  */
 public class NC78ReverseList {
     // 我的思路：第一反应，就是栈啊？写完发现过不了，时间过长？？？
     // 查看题解，很多人都是直接用个指针；
     // 所以：先看问题能不能简单解决，不能再考虑使用数据结构。
 
-//    public ListNode reverseList(ListNode head) {
-//        Stack<ListNode> stack = new Stack();
-//
-//        ListNode node = head;
-//        while (node != null) {
-//            stack.push(node);
-//            node = node.next;
-//        }
-//
-//        head = node = stack.pop();
-//        while (!stack.empty()) {
-//            node = node.next = stack.pop();
-//        }
-//        return head;
-//    }
+    /*
+    public ListNode reverseList(ListNode head) {
+        Stack<ListNode> stack = new Stack();
+
+        ListNode node = head;
+        while (node != null) {
+            stack.push(node);
+            node = node.next;
+        }
+
+        head = node = stack.pop();
+        while (!stack.empty()) {
+            node = node.next = stack.pop();
+        }
+        return head;
+    }
+     */
 
     /**
      * 通过几个指针解决，其实就是把一个元素的前后都先获取到，再移动指针循环到结束
